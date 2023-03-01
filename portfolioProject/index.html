@@ -4,21 +4,29 @@
 	<title>Personal Portfolio</title>
 	<meta charset="utf8">
 	<link href="style.css" rel="stylesheet">
-	<link href="index.js">
+	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-	<h1>My Portfolio</h1>
+	<div class="header">
+		<h1>My Portfolio</h1>
+		<button onClick="darkMode()" id="darkModeBtn">Dark Mode</button>
+	</div>
+	
 	<div class="container">
 		<div>
-			<img id='laptop' src="images/laptop.jfif" width="250" height="180" alt="laptop">
+			<img id='laptop' src="images/laptop.jfif" alt="laptop">
 		</div>
 		<div class="text">
 			<h2>About me</h2>
-			<p>My name is Alan, I am a keen developer and quite new to this scene. Here I will showcase some my skills to you. What i enjoy about coding is how it challenges my ability to think critically and to solve problems. I also like putting together an attractive front-end and so far am finding JavaScript quite fun!
+			<p>
+				My name is Alan, I am a keen developer and quite new to this scene. Here I will showcase some my skills to you.<span id="dots">...</span>
+				<span id="more">What i enjoy about coding is how it challenges my ability to think critically and to solve problems. I also like putting together an attractive front-end and so far am finding JavaScript quite fun!</span>
 			</p>
+				<button onClick="showMore()" id="showTextBtn">Read More</button>
+			
 			<h4>My GitHub</h4>
 			<a href= "https://github.com/a-foxx">Click here to see!</a>
-			</div>
+		</div>
 		<div>
 				<h3>What i'm learning</h3>
 			<ul>
@@ -26,12 +34,16 @@
 				<li>CSS</li>
 				<li>JavaScript</li>
 				<li>GitHub</li>
+				<li>React</li>
 				<li>Python</li>
 				<li>Much more coming soon..</li>
 			</ul>
 			</div>
 	</div>
 	<div class='footer'>
+		<div class="image"> 
+			<img src="Images/react.png" alt="React logo">
+		</div>
 		<div class="image">
 			<img src="images/Python-logo.png" alt="Python logo">
 		</div>
@@ -41,19 +53,15 @@
 		<div class="image"> 
 			<img src="images/github-logo.png" alt="Github logo">
 		</div>
-		<div class="image"> 
-			<img src="Images/react.png" alt="React logo">
-		</div>
+		
 		<div class="image"> 
 			<img src="Images/sql.jpg" alt="SQL logo">
 		</div>
 		<div class='contact'>
-		Contact Me!
-		<textarea id= 'contactMe' name= 'contactMe'>
-		Feel free to write me a message.
-		</textarea><br><br>
-		<input type='submit'>
-	</div>
+			Contact Me!
+			<textarea id= 'contactMe' name= 'contactMe'>Feel free to write me a message.</textarea>
+			<input type='submit'>
+		</div>
 	</div>
 	
 </body>

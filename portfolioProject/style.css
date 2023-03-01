@@ -1,28 +1,76 @@
 
 body {
 	background-color: #bfe5fa;	
-	font-size: 110%;
+	font-size: 120%;
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	line-height: 1.75em;
 }
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dark-mode {
+	background-color: black;
+	color: whitesmoke;
+}
+
+.dark-mode h1 {
+	text-shadow: none;
+	color: black;
+}
+
+#darkModeBtn {
+	background-color: aliceblue;
+	font-size: 1em;
+	border-radius: 5px;
+	padding: 0.25em;
+	height: 5em;
+	width: 5em;
+}
 		
 h1   {	
-	text-align: center;
+	margin: 0.75em;
 	font-size: 250%;
 	text-shadow: 3px 3px 3px #F4E8BC;
+	background-color: cyan;
+	border-radius: 10px;
+	padding: 0.25em;
 }	
+
+#laptop {
+	height: 13em;
+	width: 18em;
+	border-radius: 10px;
+}
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: 1em;
+	justify-content: space-between;
+	margin: 2em;
 }
 
 .text {
 	width: 30%;
 	text-align: center;
-	
+}
+
+#more {
+	display: none;
+}
+
+#showTextBtn {
+	background-color: cyan;
+	border-radius: 5px;
+	padding: 0.25em;
+}
+
+#showTextBtn:hover {
+	text-decoration: underline;
+	padding: 0.5em;
 }
 
 .footer {
@@ -31,7 +79,8 @@ h1   {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	gap: 6.5em;
+	gap: 5em;
+	
 }
 
 .footer div:last-child {
@@ -39,9 +88,14 @@ h1   {
 }
 
 .footer img {
+	border-radius: 10px;
 	height: 12em;
 	width: 14em;
 }
+
+.footer img:hover{
+	transform: scale(1.25);
+	}
 
 .contact 	{	
 	display: flex;
@@ -52,7 +106,7 @@ h1   {
 }
 
 .contact textarea {
-	margin-bottom: 0.5em;
+	margin: 0.5em 5em;
 }
 
 @media only screen and (max-width: 600px) {
