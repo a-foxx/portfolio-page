@@ -9,7 +9,7 @@ body {
 .header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-content: center;
 }
 
 .dark-mode {
@@ -27,12 +27,12 @@ body {
 	font-size: 1em;
 	border-radius: 5px;
 	padding: 0.25em;
-	height: 5em;
-	width: 5em;
+	height: 4em;
+	width: 4em;
 }
 		
 h1   {	
-	margin: 0.75em;
+	
 	font-size: 250%;
 	text-shadow: 3px 3px 3px #F4E8BC;
 	background-color: cyan;
@@ -50,7 +50,7 @@ h1   {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 2em;
+	margin: 0.5em 2em 1em;
 }
 
 .text {
@@ -89,8 +89,8 @@ h1   {
 
 .footer img {
 	border-radius: 10px;
-	height: 12em;
-	width: 14em;
+	height: 10em;
+	width: 12em;
 }
 
 .footer img:hover{
