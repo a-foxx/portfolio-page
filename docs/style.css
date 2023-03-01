@@ -10,6 +10,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
+	margin: auto;
 }
 
 .dark-mode {
@@ -24,15 +25,16 @@ body {
 
 #darkModeBtn {
 	background-color: aliceblue;
-	font-size: 1em;
+	font-size: 0.75em;
+	font-weight: bold;
 	border-radius: 5px;
 	padding: 0.25em;
-	height: 4em;
-	width: 4em;
+	height: 3.5em;
+	width: 3.5em;
 }
 		
 h1   {	
-	
+	margin-top: auto;
 	font-size: 250%;
 	text-shadow: 3px 3px 3px #F4E8BC;
 	background-color: cyan;
